@@ -1,5 +1,5 @@
 export interface Game {
-    background_imageg: string;
+    background_image: string;
     name: string;
     released: string;
     metacritic_url: string;
@@ -43,5 +43,7 @@ interface Screeshots {
 }
 
 interface Trailer {
-    data: { max: string; };
+    data: {
+        max: string;
+    };
 }
