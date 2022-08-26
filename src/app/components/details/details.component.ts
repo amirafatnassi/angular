@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { HttpService } from 'src/app/services/http.service';
 import { Game } from 'src/app/models';
@@ -11,10 +11,10 @@ import { Game } from 'src/app/models';
 })
 export class DetailsComponent implements OnInit , OnDestroy{
   gameRating = 0;
-  gameId: string;
-  game: Game;
-  routeSub: Subscription;
-  gameSub: Subscription;
+  gameId!: string;
+  game!: Game;
+  routeSub!: Subscription;
+  gameSub!: Subscription;
 
   constructor(
     private ActivatedRoute: ActivatedRoute,
